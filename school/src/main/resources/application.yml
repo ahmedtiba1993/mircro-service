@@ -24,3 +24,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+
+application:
+  config:
+    students-url: http://localhost:8090/api/v1/students
