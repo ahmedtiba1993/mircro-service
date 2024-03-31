@@ -1,30 +1,5 @@
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
-server:
-  port: 8070
 spring:
   application:
     name: schools
   config:
     import: optional:configserver:http://localhost:8888
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/schools
-    username: root
-    password: admin
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-
-application:
-  config:
-    students-url: http://localhost:8222/api/v1/students
